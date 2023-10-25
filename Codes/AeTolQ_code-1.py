@@ -17,7 +17,7 @@ jobname = 'AeTolQ' #@param {type:"string"}
 # number of models to use
 num_relax = 5 #@param [0, 1, 5] {type:"raw"}
 #@markdown - specify how many of the top ranked structures to relax using amber
-template_mode = "pdb100" #@param ["none", "pdb100","custom"]
+template_mode = "none" #@param ["none", "pdb100","custom"]
 #@markdown - `none` = no template information is used. `pdb100` = detect templates in pdb100 (see [notes](#pdb100)). `custom` - upload and search own templates (PDB or mmCIF format, see [notes](#custom_templates))
 
 use_amber = num_relax > 0
